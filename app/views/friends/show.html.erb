@@ -1,0 +1,16 @@
+
+<div class="friend-card">
+  <h1>
+    <%= @friend.first_name %>
+      <%= @friend.last_name %>
+  </h1>
+  <p>
+    <%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %>
+  </p>
+  <div class="button-container">
+    <%= link_to "Edit friend" , edit_friend_path(@friend), class:"btn btn-success" %>
+      <%= link_to "Back to list" , friends_path, class:"btn btn-success" %>
+        </br></br>
+        <%= button_to "Delete friend" , @friend, method: :delete, class:"btn btn-warning delete-button" %>
+  </div>
+</div>
