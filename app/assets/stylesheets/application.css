@@ -15,7 +15,7 @@
  */
 
 * {
-    font-family: 'Roboto Mono', monospace;;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .btn-outline-success {
@@ -73,7 +73,11 @@ a:hover{
 }
 
 .edit-add-container {
-    margin-right: 30em;
+    width: 60%;
+}
+
+.sign-up-in-container{
+    width: 60%;
 }
 
 .table {
@@ -82,4 +86,8 @@ a:hover{
 
 .alert {
     color: rgb(146, 169, 244);
+}
+
+i {
+    color:gray;
 }
