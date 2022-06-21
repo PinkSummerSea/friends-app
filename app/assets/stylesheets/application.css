@@ -74,10 +74,12 @@ a:hover{
 
 .edit-add-container {
     width: 60%;
+    margin-bottom: 3em;
 }
 
 .sign-up-in-container{
     width: 60%;
+    margin-bottom: 3em;
 }
 
 .table {

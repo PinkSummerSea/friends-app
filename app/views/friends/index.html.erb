@@ -7,6 +7,7 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Twitter</th>
+      <th>User Id</th>
       <th colspan="1"></th>
     </tr>
   </thead>
@@ -14,15 +15,18 @@
   <tbody style="width: 100%;">
 
     <% @friends.each do |friend| %>
-      <tr>
-        <%= render friend %>
-          <td>
-            <%= link_to "Show this friend" , friend %>
-          </td>
-      </tr>
+      <% if friend.user == current_user %>
+        <tr>
+          <%= render friend %>
+            <td>
+              <%= link_to "Show this friend" , friend %>
+            </td>
+        </tr>
       <% end %>
+    <% end %>
 
   </tbody>
 </table>
 
 <%= link_to "New friend" , new_friend_path, class:"btn btn-outline-success" %>
+
