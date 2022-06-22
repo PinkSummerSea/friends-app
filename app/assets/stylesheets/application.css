@@ -93,3 +93,16 @@ a:hover{
 i {
     color:gray;
 }
+
+.home-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-image {
+    width: 70%;
+    height: auto;
+    padding: 2em 0 1em 0;
+}
